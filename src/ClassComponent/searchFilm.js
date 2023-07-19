@@ -20,7 +20,7 @@ class Search extends React.Component {
 
   fetchMovie = () => {
     return fetch(
-      "http://www.omdbapi.com/?apikey=76ab7cb7&s=" + this.state.input
+      "https://www.omdbapi.com/?apikey=76ab7cb7&s=" + this.state.input
     )
       .then((respon) => respon.json())
       .then((respon) => respon.Search);

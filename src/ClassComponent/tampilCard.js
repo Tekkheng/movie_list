@@ -26,7 +26,7 @@ class Tcard extends React.Component {
   };
 
   DetailMovie = async (id) => {
-    return fetch("http://www.omdbapi.com/?apikey=76ab7cb7&i=" + id)
+    return fetch("https://www.omdbapi.com/?apikey=76ab7cb7&i=" + id)
       .then((respon) => respon.json())
       .then((respon) => respon);
   };

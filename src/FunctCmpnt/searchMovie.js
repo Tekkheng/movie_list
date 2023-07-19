@@ -25,7 +25,7 @@ const SearchMovie = () => {
   };
 
   const gtMovie = () => {
-    return fetch("http://www.omdbapi.com/?apikey=76ab7cb7&s=" + inputMovie)
+    return fetch("https://www.omdbapi.com/?apikey=76ab7cb7&s=" + inputMovie)
       .then((respon) => respon.json())
       .then((respon) => respon.Search);
   };
